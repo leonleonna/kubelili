@@ -1,5 +1,0 @@
-- hosts: master,slave
-  gather_facts: no
-  roles:
-    - { role: roles/containerd, when: "RUNTIME == 'containerd'" }
-    - { role: roles/docker, when: "RUNTIME == 'docker'" }
